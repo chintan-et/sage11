@@ -1,10 +1,9 @@
-import $ from 'jquery'
-import domReady from '@roots/sage/client/dom-ready'
+import jQuery from 'jquery'
 
-domReady(() => {
+
+  jQuery(document).ready(function ($) {
   var test = 10
   console.log('Test:', test)
-  console.log('Using jQuery:', $.fn.jquery)
+  console.log('Using jQuery:')
 
-  $('.some-class').addClass('active')
-})
+});
