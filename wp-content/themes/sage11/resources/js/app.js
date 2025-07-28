@@ -9,6 +9,6 @@ import { each } from 'jquery';
 domReady(async () => {
 
   jQuery(document).ready(function ($) {
-
+console.log('Logging');
   });
 });
