@@ -29,7 +29,6 @@ export default defineConfig([
       'no-useless-return': 'error',
       'no-unsafe-optional-chaining': 'error',
       'array-callback-return': 'error',
-
     },
   },
   {
