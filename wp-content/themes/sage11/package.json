@@ -14,7 +14,16 @@
     "translate:update": "for file in ./resources/lang/*.po; do wp i18n update-po ./resources/lang/sage.pot $file; done",
     "translate:compile": "npm run translate:mo && npm run translate:js",
     "translate:js": "wp i18n make-json ./resources/lang --pretty-print",
-    "translate:mo": "wp i18n make-mo ./resources/lang ./resources/lang"
+    "translate:mo": "wp i18n make-mo ./resources/lang ./resources/lang",
+    "prepare": "husky"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx,html}": [
+      "eslint --fix"
+    ],
+    "*.{js,jsx,ts,tsx,html,css}": [
+      "prettier --write"
+    ]
   },
   "devDependencies": {
     "@eslint/js": "^9.32.0",
@@ -66,6 +75,7 @@
     "has-flag": "^4.0.0",
     "jest-worker": "^27.5.1",
     "jiti": "^2.5.1",
+    "jquery": "^3.7.1",
     "json-parse-even-better-errors": "^2.3.1",
     "json-schema-traverse": "^1.0.0",
     "json2php": "^0.0.7",
