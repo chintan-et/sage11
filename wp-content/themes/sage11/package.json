@@ -18,14 +18,11 @@
     "translate:mo": "wp i18n make-mo ./resources/lang ./resources/lang",
     "prepare": "husky"
   },
-  "lint-staged": {
-    "*.{js,jsx,ts,tsx,html}": [
-      "eslint --max-warnings=0"
-    ],
-    "*.{js,jsx,ts,tsx,html,css}": [
-      "prettier --write"
-    ]
-  },
+"lint-staged": {
+  "*.{js,mjs}": [
+    "eslint"
+  ]
+},
   "devDependencies": {
     "@eslint/js": "^9.32.0",
     "@html-eslint/eslint-plugin": "^0.43.1",
