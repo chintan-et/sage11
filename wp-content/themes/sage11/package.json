@@ -8,6 +8,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "test": "lint-staged",
     "watch:tailwind": "npx tailwindcss -i ./assets/css/style.css -o ./dist/style.css --watch",
     "translate": "npm run translate:pot && npm run translate:update",
     "translate:pot": "wp i18n make-pot . ./resources/lang/sage.pot --include=\"theme.json,patterns,app,resources\"",
@@ -17,14 +18,15 @@
     "translate:mo": "wp i18n make-mo ./resources/lang ./resources/lang",
     "prepare": "husky"
   },
-  "lint-staged": {
-    "*.{js,jsx,ts,tsx,html}": [
-      "eslint --fix"
-    ],
-    "*.{js,jsx,ts,tsx,html,css}": [
-      "prettier --write"
-    ]
-  },
+
+"lint-staged": {
+  "*.{js,jsx,ts,tsx,html}": [
+    "eslint --max-warnings=0"
+  ],
+  "*.{js,jsx,ts,tsx,html,css}": [
+    "prettier --write"
+  ]
+},
   "devDependencies": {
     "@eslint/js": "^9.32.0",
     "@html-eslint/eslint-plugin": "^0.43.1",
