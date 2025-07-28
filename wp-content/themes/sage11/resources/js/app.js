@@ -1,5 +1,5 @@
 import 'jquery';
-import domReady from '@roots/sage/client/dom-ready';
+// import domReady from '@roots/sage/client/dom-ready';
 import { each } from 'jquery';
 
 
@@ -9,6 +9,8 @@ import { each } from 'jquery';
 domReady(async () => {
 
   jQuery(document).ready(function ($) {
+
 console.log('Logging');
+
   });
 });

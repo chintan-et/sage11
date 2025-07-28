@@ -75,6 +75,7 @@
     "has-flag": "^4.0.0",
     "jest-worker": "^27.5.1",
     "jiti": "^2.5.1",
+    "jquery": "^3.7.1",
     "json-parse-even-better-errors": "^2.3.1",
     "json-schema-traverse": "^1.0.0",
     "json2php": "^0.0.7",
