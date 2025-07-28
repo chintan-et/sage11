@@ -2,6 +2,7 @@ import { defineConfig } from 'eslint/config'
 import globals from 'globals'
 import js from '@eslint/js'
 import html from '@html-eslint/eslint-plugin'
+import noJquery from 'eslint-plugin-no-jquery'
 
 export default defineConfig([
   { files: ["**/*.{js,mjs,cjs}"], plugins: { js }, extends: ["js/recommended"] },
@@ -12,6 +13,7 @@ export default defineConfig([
     plugins: { js },
     extends: ['js/recommended'],
     rules: {
+      'no-jquery/no-jquery': 'error',
       'no-console': 'error',
       'no-debugger': 'error',
       'no-alert': 'error',
