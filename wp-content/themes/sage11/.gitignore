@@ -1,0 +1,12 @@
+/node_modules
+/vendor
+/public/*
+!/public/.gitkeep
+.env
+npm-debug.log
+
+# Additional entries
+dist
+.vscode
+package-lock.json
+**/.DS_Store
