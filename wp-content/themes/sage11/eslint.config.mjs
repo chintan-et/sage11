@@ -10,7 +10,8 @@ export default defineConfig([
   { files: ['**/*.{js,mjs,cjs}'], languageOptions: { globals: globals.browser } },
   {
     files: ['**/*.{js,mjs,cjs}'],
-    plugins: { js },
+    plugins: {  js,
+      'no-jquery': noJquery, },
     extends: ['js/recommended'],
     rules: {
       'no-jquery/no-jquery': 'error',
