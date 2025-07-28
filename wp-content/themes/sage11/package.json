@@ -8,7 +8,6 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "test": "lint-staged",
     "watch:tailwind": "npx tailwindcss -i ./assets/css/style.css -o ./dist/style.css --watch",
     "translate": "npm run translate:pot && npm run translate:update",
     "translate:pot": "wp i18n make-pot . ./resources/lang/sage.pot --include=\"theme.json,patterns,app,resources\"",
@@ -17,14 +16,6 @@
     "translate:js": "wp i18n make-json ./resources/lang --pretty-print",
     "translate:mo": "wp i18n make-mo ./resources/lang ./resources/lang",
     "prepare": "husky"
-  },
-  "lint-staged": {
-    "*.{js,jsx,ts,tsx,html}": [
-      "eslint --fix"
-    ],
-    "*.{js,jsx,ts,tsx,html,css}": [
-      "prettier --write"
-    ]
   },
   "devDependencies": {
     "@eslint/js": "^9.32.0",
@@ -76,7 +67,6 @@
     "has-flag": "^4.0.0",
     "jest-worker": "^27.5.1",
     "jiti": "^2.5.1",
-    "jquery": "^3.7.1",
     "json-parse-even-better-errors": "^2.3.1",
     "json-schema-traverse": "^1.0.0",
     "json2php": "^0.0.7",

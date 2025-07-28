@@ -29,10 +29,6 @@ export default defineConfig([
       'no-useless-return': 'error',
       'no-unsafe-optional-chaining': 'error',
       'array-callback-return': 'error',
-      'no-restricted-imports': ['error', {
-        paths: ['jquery'],
-        message: 'jQuery is not allowed in this project. Use native JS instead.',
-      }],
 
     },
   },
